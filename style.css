@@ -23,9 +23,6 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
-  list-style: none;
-  display: flex;
   gap: 1.5rem;
   transition: all 0.3s ease;
 }
@@ -56,6 +53,15 @@ body {
   transition: all 0.3s ease;
 }
 
+/* DESKTOP FIX — show nav items normally */
+@media (min-width: 769px) {
+  .nav-links li {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Mobile hidden state */
 .nav-links li {
   opacity: 0;
   transform: translateY(-10px);
